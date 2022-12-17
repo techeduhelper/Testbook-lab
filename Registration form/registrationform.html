@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .background {
+            background-color: whitesmoke;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            margin: 2% 2%;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            padding: 1%;
+            color: blue;
+            background-color:#ADD8E6;
+            color: black;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="background">
+        <div class="container">
+            <h1><span style="color: black;"> Registration Form</span></h1>
+            <form action="">
+                <label for="name">Enter your details below</label><br>
+                <ul>
+                    <li>
+                        <input type="email" name="email" id="email" placeholder="your_email@gmail.com" required>
+                    </li>
+                    <br>
+                    <li>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                    </li>
+                </ul>
+                <br>
+                <label for="password">!Type a complex password with 8-20 characters.</label>
+                <br>
+                <ul>
+                    <li>
+                        <input type="password" name="password" id="password" placeholder="+20 Phone Number" required>
+                    </li>
+                </ul>
+                <hr>
+                <label for="profession" style="font-weight: bold;">Enter Your Profession:</label>
+                <br>
+                <ul>
+                    <li>
+                        <input type="radio" name="profession" id="student" value="student">
+                        <label for="gender">Student</label>
+                        <input type="radio" name="profession" id="teacher" value="teacher">
+                        <label for="gender">Teacher</label>
+                        <input type="radio" name="profession" id="developer" value="developer">
+                        <label for="gender">Developer</label>
+                    </li>
+                </ul>
+                <label for="">Choose the stage if are (student)</label>
+                <select name="student" id="stuprofession" required>
+                    <option value="primary">Primary</option>
+                    <option value="secondary">Secondary</option>
+                    <option value="Higher Secondary">Higher Secondary</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="B.Tech">B.Tech</option>
+                </select>
+                <hr>
+                <ul>
+                    <li>
+                        <label for="">Enter your Birth date.</label>
+                        <input type="date"  name="date" id="date" value="" min="1990-01-01" max="2005-12-31" required>
+                    </li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>
+                        <label for="">Any notes.</label>
+                        <input type="text" name="notes" id="notes" placeholder="Any notes">
+                    </li>
+                </ul>
+                <hr>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
