@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            place-items: center;
+            display: grid;
+        }
+        .rock{
+            text-align: center;
+            padding: 3rem;
+            border: 2px solid red;
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .rock div{
+            width: 100%;
+        }
+        .rock div::after{
+            background-color:#4EC7F3;
+            content: 'Work';
+            animation: mk 6s infinite;
+        }
+        @keyframes mk{
+            30%{
+                content: 'Life Style';
+                background-color: #42C58A;
+            }
+            60%{
+                content: 'Everything';
+                background-color: #DC143C;
+            }
+        }
+      </style>
+</head>
+
+<body>
+    <div class="rock">
+        Make <div></div> Awesome!
+    </div>  
+</body>
+
+</html>

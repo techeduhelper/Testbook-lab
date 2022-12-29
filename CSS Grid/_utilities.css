@@ -1,0 +1,16 @@
+:root{
+    --backgroundColor: #111;
+    --textColor:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+.grid-item{
+    padding: 20px;
+    background: darkmagenta;
+    border: 1px solid var(--textColor);
+}
