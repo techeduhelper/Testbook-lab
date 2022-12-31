@@ -7,14 +7,11 @@
 
 }
 :root{
-    --background-color: #E9E5DF;
+    --background-color: #F3F2EF;
     --nav-color: #FFFFFF;
     --search-color: #EEF3F8;
 }
 body{
     background: var(--background-color);
     scroll-behavior: smooth;
-}
-nav{
-    width: 100%;
 }
